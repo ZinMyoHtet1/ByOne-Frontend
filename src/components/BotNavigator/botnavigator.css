@@ -1,0 +1,13 @@
+.bot-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+
+.bot-nav .nav-label {
+  color: #ced4da;
+  font-size: 12px;
+  font-weight: 600;
+}
