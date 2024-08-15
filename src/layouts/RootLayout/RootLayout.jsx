@@ -1,4 +1,7 @@
 import "./root.css";
+
+import { Outlet } from "react-router";
+
 import { BottomNavigation, Navbar } from "../../containers";
 const RootLayout = () => {
   return (
@@ -6,6 +9,7 @@ const RootLayout = () => {
       <div className="wrapper">
         <Navbar />
         <BottomNavigation />
+        <Outlet />
       </div>
     </div>
   );

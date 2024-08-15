@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 
-const ActivityIcon = () => {
+const ActivityIcon = ({ fill = "#CED4DA" }) => {
   return (
     <svg
       width="30"
@@ -11,7 +12,8 @@ const ActivityIcon = () => {
     >
       <path
         d="M3.75 15H7.5L11.25 3.75L18.75 26.25L22.5 15H26.25"
-        stroke="#CED4DA"
+        // stroke="#CED4DA"
+        stroke={fill}
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"

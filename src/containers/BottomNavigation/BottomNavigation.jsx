@@ -1,21 +1,16 @@
 import { addIcon } from "../../assets";
 import BotNavigator from "../../components/BotNavigator/BotNavigator";
-import {
-  ActivityIcon,
-  ChallengeIcon,
-  ProfileIcon,
-  RankingIcon,
-} from "../../svg/botNavigationIcon";
+
 import "./bottomnavi.css";
 
 const BottomNavigation = () => {
   return (
     <div id="bottom-navigation">
       <div className="tab-container">
-        <BotNavigator icon={<ActivityIcon />} label="Activity" />
-        <BotNavigator icon={<ChallengeIcon />} label="Challenge" />
-        <BotNavigator icon={<RankingIcon />} label="Ranking" />
-        <BotNavigator icon={<ProfileIcon />} label="Profile" />
+        <BotNavigator type="activity" />
+        <BotNavigator type="challenge" />
+        <BotNavigator type="ranking" />
+        <BotNavigator type="profile" />
 
         <div className="create-challenge-btn">
           <div className="white-circle">

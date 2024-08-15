@@ -1,0 +1,131 @@
+#active-battle-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#active-battle-card .timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+#active-battle-card .timer-container .timer {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffff;
+  margin: 0 7px 0 12px;
+  letter-spacing: 1px;
+  transform: translateY(2px);
+}
+
+#active-battle-card .timer-container .text {
+  align-self: flex-end;
+  color: var(--gray-color);
+  font-size: 12px;
+}
+
+#active-battle-card .squad-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 12px;
+}
+
+#active-battle-card .squad-container .vs {
+  color: var(--gray-color);
+  font-size: 14px;
+  font-style: italic;
+}
+
+#active-battle-card .squad-container .squad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+#active-battle-card .squad-container .squad .squad-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#active-battle-card .squad-container .squad .squad-name {
+  color: var(--orange-color);
+  font-size: 20px;
+}
+
+#active-battle-card .contestant-container {
+  position: relative;
+  background-color: var(--skyblue-color);
+  padding: 22px 34px 24px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#active-battle-card .contestant-container .contestants {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#active-battle-card .contestant-container .contestants:first-child {
+  justify-content: flex-start;
+}
+
+#active-battle-card .contestant-container .contestants:last-child {
+  justify-content: flex-end;
+}
+
+#active-battle-card .contestant-container .contestants .player {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#active-battle-card .contestant-container .contestants .player .profile-img {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  object-fit: fill;
+  border: 0.0125px solid rgba(128, 128, 128, 0.444);
+}
+
+#active-battle-card .contestant-container .contestants .player .profile-name {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: #ffff;
+}
+
+#active-battle-card .contestant-container .bet-amount {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: var(--orange-color);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+  color: var(--dark-gray-color);
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+#active-battle-card .contestant-container .more-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: var(--light-purple-color);
+  padding: 4px 0 6px;
+}

@@ -1,9 +1,10 @@
-import appLogoIcon from "./app-logo.png";
-import bellIcon from "./bell_icon.png";
-import humburgerIcon from "./humburger.png";
-import grangerHero from "./granger-hero.png";
-import zilongHero from "./zilong-hero.png";
+import appLogoIcon from "./app-logo.svg";
+import bellIcon from "./bell_icon.svg";
+import humburgerIcon from "./humburger.svg";
+import grangerHero from "./granger-hero.svg";
+import zilongHero from "./zilong-hero.svg";
 import addIcon from "./add-icon.svg";
+import alarmIcon from "./alarm-icon.svg";
 
 export {
   appLogoIcon,
@@ -12,4 +13,5 @@ export {
   grangerHero,
   zilongHero,
   addIcon,
+  alarmIcon,
 };
