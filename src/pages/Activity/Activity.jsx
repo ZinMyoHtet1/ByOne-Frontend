@@ -1,5 +1,5 @@
 import { ActiveBattleCard } from "../../components";
-import { ActiveAnalysis } from "../../containers";
+import { ActiveAnalysis, HistoryList } from "../../containers";
 import "./activity.css";
 
 const Activity = () => {
@@ -7,6 +7,7 @@ const Activity = () => {
     <div className="tab-page">
       <ActiveBattleCard />
       <ActiveAnalysis />
+      <HistoryList />
     </div>
   );
 };

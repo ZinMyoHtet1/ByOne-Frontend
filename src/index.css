@@ -28,6 +28,9 @@ li {
 }
 
 .tab-page {
-  padding: 12px 10px;
-  max-height: 40%;
+  padding: 12px 10px 80px;
+  /* overflow-y: scroll; */
+  /* margin-bottom: 70px; */
+  /* background-color: red; */
+  padding-top: 60px;
 }

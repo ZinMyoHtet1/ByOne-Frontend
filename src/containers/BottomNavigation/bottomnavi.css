@@ -1,7 +1,9 @@
 #bottom-navigation {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 393px;
+  /* left: 0;
+  right: 0; */
   padding: 0 26px;
   border-radius: 20px 20px 0 0;
   background-color: #023047;
@@ -48,4 +50,10 @@
 #bottom-navigation .tab-container .create-challenge-btn .white-circle:hover,
 #bottom-navigation .tab-container .create-challenge-btn .white-circle:active {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 393px) {
+  #bottom-navigation {
+    width: 100%;
+  }
 }
