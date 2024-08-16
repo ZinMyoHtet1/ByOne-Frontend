@@ -1,5 +1,5 @@
 import { addIcon } from "../../assets";
-import BotNavigator from "../../components/BotNavigator/BotNavigator";
+import { BotNavigatorController } from "../../components";
 
 import "./bottomnavi.css";
 
@@ -7,10 +7,10 @@ const BottomNavigation = () => {
   return (
     <div id="bottom-navigation">
       <div className="tab-container">
-        <BotNavigator type="activity" />
-        <BotNavigator type="challenge" />
-        <BotNavigator type="ranking" />
-        <BotNavigator type="profile" />
+        <BotNavigatorController control="activity" />
+        <BotNavigatorController control="challenge" />
+        <BotNavigatorController control="ranking" />
+        <BotNavigatorController control="profile" />
 
         <div className="create-challenge-btn">
           <div className="white-circle">

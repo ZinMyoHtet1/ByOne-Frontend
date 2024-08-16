@@ -40,4 +40,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+#bottom-navigation .tab-container .create-challenge-btn .white-circle:hover,
+#bottom-navigation .tab-container .create-challenge-btn .white-circle:active {
+  transform: scale(1.05);
 }

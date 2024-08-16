@@ -8,8 +8,17 @@
   gap: 4px;
 }
 
+.bot-nav:hover,
+.bot-nav:active {
+  opacity: 0.8;
+}
+
 .bot-nav .nav-label {
   color: #ced4da;
   font-size: 12px;
   font-weight: 600;
+}
+
+.bot-nav.active .nav-label {
+  color: #9747ff;
 }
