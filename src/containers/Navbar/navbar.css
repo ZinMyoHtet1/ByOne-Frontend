@@ -30,6 +30,14 @@
   transform: translateY(5px);
 }
 
+#navbar .notication-icon {
+  cursor: pointer;
+}
+
+#navbar .notication-icon:hover {
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 393px) {
   #navbar {
     width: 100%;

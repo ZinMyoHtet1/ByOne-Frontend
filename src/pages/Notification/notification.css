@@ -1,0 +1,8 @@
+#notification {
+  background: rgb(61, 52, 139);
+  background: linear-gradient(
+    172deg,
+    rgba(61, 52, 139, 1) 16%,
+    rgba(2, 48, 71, 1) 62%
+  );
+}

@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { useNavigate } from "react-router";
 import {
   appLogoIcon,
   bellIcon,
@@ -9,6 +10,8 @@ import {
 import "./navbar.css";
 
 const Navbar = ({ setOpenDrawer }) => {
+  const navigate = useNavigate();
+
   return (
     <div id="navbar">
       <img
@@ -22,7 +25,12 @@ const Navbar = ({ setOpenDrawer }) => {
         <img src={appLogoIcon} alt="app-logo" id="app-logo" />
         <img src={grangerHero} alt="granger-hero" />
       </div>
-      <img src={bellIcon} alt="notifications" />
+      <img
+        src={bellIcon}
+        alt="notifications"
+        className="notication-icon"
+        onClick={() => navigate("/notifications")}
+      />
     </div>
   );
 };

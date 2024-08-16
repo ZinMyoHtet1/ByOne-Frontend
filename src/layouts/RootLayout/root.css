@@ -1,12 +1,12 @@
 #root-layout {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   width: 393px;
   margin: 0 auto;
   position: relative;
 }
 
 .wrapper {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: 100%;
   background: rgb(61, 52, 139);

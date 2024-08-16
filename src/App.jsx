@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout/RootLayout";
-import { Activity, Challenge, Profile, Ranking } from "./pages";
+import { Activity, Challenge, Notification, Profile, Ranking } from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
+      },
+      {
+        path: "/notifications",
+        element: <Notification />,
       },
     ],
   },
