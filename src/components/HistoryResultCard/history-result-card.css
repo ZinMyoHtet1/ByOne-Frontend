@@ -1,0 +1,78 @@
+.history-result-card {
+  height: 40px;
+  width: 100%;
+  background-color: #555555;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  /* gap: 8px; */
+}
+
+.history-result-card .result-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.history-result-card .result-circle.win {
+  background-color: var(--green-color);
+}
+
+.history-result-card .result-circle.lose {
+  background-color: var(--red-color);
+}
+
+.history-result-card .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0 0 8px;
+}
+
+.history-result-card .details .bet-amount {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: var(--orange-color);
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.history-result-card .details .contestant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.history-result-card .details .contestant-container .contestants {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.history-result-card .details .contestant-container .contestants span {
+  /* font-size: 14px; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: var(--light-purple-color);
+}
+
+.history-result-card .details .contestant-container .date {
+  font-size: 10px;
+  color: var(--gray-blue-color);
+}

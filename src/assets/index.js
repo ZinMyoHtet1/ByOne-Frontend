@@ -5,6 +5,7 @@ import grangerHero from "./granger-hero.svg";
 import zilongHero from "./zilong-hero.svg";
 import addIcon from "./add-icon.svg";
 import alarmIcon from "./alarm-icon.svg";
+import backBtnIcon from "./back-btn-icon.svg";
 
 export {
   appLogoIcon,
@@ -14,4 +15,5 @@ export {
   zilongHero,
   addIcon,
   alarmIcon,
+  backBtnIcon,
 };

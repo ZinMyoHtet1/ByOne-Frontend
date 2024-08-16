@@ -1,5 +1,5 @@
 #root-layout {
-  height: 100vh;
+  /* min-height: 100vh; */
   width: 393px;
   margin: 0 auto;
   position: relative;

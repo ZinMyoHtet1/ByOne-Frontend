@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
   appLogoIcon,
   bellIcon,
@@ -7,10 +8,15 @@ import {
 } from "../../assets";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ setOpenDrawer }) => {
   return (
     <div id="navbar">
-      <img src={humburgerIcon} alt="side-drawer" />
+      <img
+        src={humburgerIcon}
+        alt="side-drawer"
+        id="side-drawer-btn"
+        onClick={() => setOpenDrawer(true)}
+      />
       <div className="middle-nav">
         <img src={zilongHero} alt="zilong-hero" />
         <img src={appLogoIcon} alt="app-logo" id="app-logo" />

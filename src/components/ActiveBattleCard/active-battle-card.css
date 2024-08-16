@@ -129,4 +129,9 @@
   font-family: "Roboto", sans-serif;
   color: var(--light-purple-color);
   padding: 4px 0 6px;
+  cursor: pointer;
+}
+
+#active-battle-card .contestant-container .more-btn:hover {
+  color: #ffffff92;
 }

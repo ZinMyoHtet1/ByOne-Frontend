@@ -16,7 +16,12 @@
   --skyblue-color: #0575ad;
   --light-purple-color: #bfaada;
   --purple-color: #9747ff;
+  --light-purple-color: #7678ed;
   --gray-purple-color: #474973;
+  --green-color: #2dd112;
+  --red-color: #ff3030;
+  --gray-blue-color: #a0bbc9;
+  --dark-cyan-color: #023047;
 }
 
 div,
@@ -29,6 +34,7 @@ li {
 
 .tab-page {
   padding: 12px 10px 80px;
+  min-height: 100vh;
   /* overflow-y: scroll; */
   /* margin-bottom: 70px; */
   /* background-color: red; */

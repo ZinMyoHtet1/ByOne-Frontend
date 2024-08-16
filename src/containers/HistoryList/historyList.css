@@ -1,0 +1,12 @@
+#history-list .label {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 10px 10px;
+  color: var(--gray-color);
+}
+
+#history-list .result-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
