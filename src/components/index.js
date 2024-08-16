@@ -3,6 +3,7 @@ import ActiveBattleCard from "./ActiveBattleCard/ActiveBattleCard";
 import BotNavigatorController from "./BotNavigatorController.jsx";
 import CircleAnalysis from "./CircleAnalysis/CircleAnalysis.jsx";
 import HistoryResultCard from "./HistoryResultCard/HistoryResultCard.jsx";
+import DrawerItem from "./DrawerItem/DrawerItem.jsx";
 
 export {
   BotNavigator,
@@ -10,4 +11,5 @@ export {
   BotNavigatorController,
   CircleAnalysis,
   HistoryResultCard,
+  DrawerItem,
 };

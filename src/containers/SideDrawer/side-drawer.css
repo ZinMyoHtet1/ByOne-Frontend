@@ -49,10 +49,17 @@
   cursor: pointer;
 }
 
+#side-drawer .drawer-wrapper .drawer-nav .back-btn:hover {
+  transform: scale(1.05);
+}
 #side-drawer .drawer-wrapper .drawer-nav .profile-img {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   object-fit: fill;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#side-drawer .drawer-wrapper .drawer-item-container {
+  padding: 10px 10px 10px 20px;
 }

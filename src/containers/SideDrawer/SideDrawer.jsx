@@ -1,8 +1,24 @@
 /* eslint-disable react/prop-types */
+import { useEffect } from "react";
+
 import { backBtnIcon } from "../../assets";
 import "./side-drawer.css";
+import { DrawerItem } from "../../components";
 
 const SideDrawer = ({ openDrawer, setOpenDrawer }) => {
+  useEffect(() => {
+    const handleCloseDrawer = (e) => {
+      if (openDrawer && !e.target.closest(".drawer-wrapper,#side-drawer-btn")) {
+        setOpenDrawer(false);
+      }
+    };
+    document.addEventListener("click", handleCloseDrawer);
+
+    return () => {
+      document.removeEventListener("click", handleCloseDrawer);
+    };
+  }, [openDrawer, setOpenDrawer]);
+
   return (
     <div id="side-drawer">
       <div className={`drawer-wrapper ${openDrawer ? "open" : ""}`}>
@@ -18,6 +34,11 @@ const SideDrawer = ({ openDrawer, setOpenDrawer }) => {
             alt="profile-img"
             className="profile-img"
           />
+        </div>
+        <div className="drawer-item-container">
+          <DrawerItem />
+          <DrawerItem />
+          <DrawerItem />
         </div>
       </div>
     </div>
