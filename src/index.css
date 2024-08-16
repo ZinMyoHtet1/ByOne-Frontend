@@ -16,8 +16,18 @@
   --skyblue-color: #0575ad;
   --light-purple-color: #bfaada;
   --purple-color: #9747ff;
+  --gray-purple-color: #474973;
+}
+
+div,
+span,
+a,
+ul,
+li {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tab-page {
   padding: 12px 10px;
+  max-height: 40%;
 }

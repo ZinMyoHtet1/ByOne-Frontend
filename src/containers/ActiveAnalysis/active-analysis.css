@@ -1,0 +1,19 @@
+#active-analysis-card {
+  position: relative;
+  padding: 22px 12px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(71, 73, 115, 0.25);
+}
+
+#active-analysis-card .bottom-bar {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #474973;
+  width: 80%;
+  height: 3px;
+  border-radius: 3px;
+}
