@@ -6,3 +6,10 @@
     rgba(2, 48, 71, 1) 62%
   );
 }
+
+#notification .noti-container {
+  display: flex;
+  padding: 16px 10px;
+  flex-direction: column;
+  gap: 6px;
+}

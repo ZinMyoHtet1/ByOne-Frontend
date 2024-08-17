@@ -14,7 +14,7 @@
   --dark-gray-color: #415a77;
   --orange-color: #f7b267;
   --skyblue-color: #0575ad;
-  --light-purple-color: #bfaada;
+  --white-purple-color: #bfaada;
   --purple-color: #9747ff;
   --light-purple-color: #7678ed;
   --gray-purple-color: #474973;
@@ -23,6 +23,7 @@
   --gray-blue-color: #a0bbc9;
   --dark-cyan-color: #023047;
   --gray-blue-color: #a0bbc9;
+  --dark-blue-color: #1b263b;
 }
 
 div,
@@ -47,6 +48,6 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   z-index: 400;
 }

@@ -4,6 +4,7 @@ import BotNavigatorController from "./BotNavigatorController.jsx";
 import CircleAnalysis from "./CircleAnalysis/CircleAnalysis.jsx";
 import HistoryResultCard from "./HistoryResultCard/HistoryResultCard.jsx";
 import DrawerItem from "./DrawerItem/DrawerItem.jsx";
+import NotiController from "./NotiController.jsx";
 
 export {
   BotNavigator,
@@ -12,4 +13,5 @@ export {
   CircleAnalysis,
   HistoryResultCard,
   DrawerItem,
+  NotiController,
 };
