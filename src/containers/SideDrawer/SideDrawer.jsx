@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from "react";
 
-import { backBtnIcon } from "../../assets";
+import { backBtnIcon, logoutIcon, settingIcon, squadIcon } from "../../assets";
 import "./side-drawer.css";
 import { DrawerItem } from "../../components";
 
@@ -36,9 +36,13 @@ const SideDrawer = ({ openDrawer, setOpenDrawer }) => {
           />
         </div>
         <div className="drawer-item-container">
-          <DrawerItem />
-          <DrawerItem />
-          <DrawerItem />
+          <DrawerItem icon={squadIcon} label="squads" />
+          <DrawerItem icon={settingIcon} label="setting" />
+          <DrawerItem icon={logoutIcon} label="logout" />
+        </div>
+        <div className="copyright">
+          2024 <span className="copyright-entity">&#169;</span> Copyright by
+          <span className="app-name"> ByOne</span>
         </div>
       </div>
     </div>

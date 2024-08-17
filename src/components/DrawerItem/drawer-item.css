@@ -1,0 +1,28 @@
+.drawer-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 42px;
+  width: 100%;
+  border: 0.25px solid rgba(118, 120, 237, 0.25);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.drawer-item:hover {
+  border: 0.25px solid rgba(118, 120, 237, 0.5);
+}
+
+.drawer-item .drawer-item-icon {
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drawer-item .label {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #abbac1;
+}
