@@ -59,6 +59,15 @@ const Challenge = () => {
       <div className="challenge-container">
         <ChallengeCard />
         <ChallengeCard />
+        <ChallengeCard />
+        <ChallengeCard />
+        <ChallengeCard />
+        <ChallengeCard />
+        <ChallengeCard />
+        <ChallengeCard />
+        <ChallengeCard />
+        <ChallengeCard />
+        <ChallengeCard />
       </div>
     </div>
   );

@@ -27,3 +27,5 @@ export {
   logoutIcon,
   upArrowIcon,
 };
+
+export * from "./badges";

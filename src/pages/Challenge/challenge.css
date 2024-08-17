@@ -4,3 +4,10 @@
   align-items: center;
   justify-content: space-between;
 }
+
+#challenge .challenge-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
