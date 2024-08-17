@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 8px;
+  padding-top: 4px;
 }
 
 #active-battle-card .timer-container {

@@ -10,6 +10,7 @@ import notiBackBtn from "./noti-back-btn.svg";
 import squadIcon from "./squad-icon.svg";
 import settingIcon from "./setting-icon.svg";
 import logoutIcon from "./logout-icon.svg";
+import upArrowIcon from "./upArrow-icon.svg";
 
 export {
   appLogoIcon,
@@ -24,4 +25,5 @@ export {
   squadIcon,
   settingIcon,
   logoutIcon,
+  upArrowIcon,
 };
