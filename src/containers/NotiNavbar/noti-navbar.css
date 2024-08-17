@@ -1,12 +1,17 @@
 #noti-navbar {
+  position: fixed;
+  top: 0;
+  width: 393px;
   padding: 0 20px;
   height: 56px;
-  width: 100%;
+  /* width: 100%; */
+  background-color: #3d348b;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   border-bottom: 1px solid rgba(27, 38, 59, 0.25);
   gap: 20px;
+  z-index: 200;
 }
 
 #noti-navbar .back-btn {

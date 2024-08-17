@@ -7,15 +7,16 @@ const Notification = () => {
     <div id="notification" className="full-page">
       <NotiNavbar />
       <div className="noti-container">
-        <NotiController control="challenge" seen />
-        <NotiController control="challenge" />
-        <NotiController control="challenge" />
-        <NotiController control="challenge" seen />
-        <NotiController control="challenge" />
-        <NotiController control="challenge" />
-        <NotiController control="challenge" />
-        <NotiController control="challenge" />
-        <NotiController control="challenge" />
+        <NotiController control="challenge" challenger="Sensei" seen />
+        <NotiController control="accept" accepter="Gucci" />
+        <NotiController control="challenge" challenger="Sensei" />
+        <NotiController control="challenge" challenger="Sensei" seen />
+        <NotiController control="victory" />
+        <NotiController control="deny" denier="Rolex" />
+        <NotiController control="challenge" challenger="Sensei" />
+        <NotiController control="invite" inviter="Ranger" squad="SuperTeam" />
+        <NotiController control="victory" seen />
+        <NotiController control="challenge" challenger="Sensei" />
       </div>
     </div>
   );

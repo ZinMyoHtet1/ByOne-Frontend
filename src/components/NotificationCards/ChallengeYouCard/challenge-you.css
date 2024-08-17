@@ -3,6 +3,11 @@
   background-color: rgba(118, 120, 237, 0.18);
   padding: 10px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.noti-card:hover {
+  transform: scaleX(1.007);
 }
 
 .noti-card .border-box {
@@ -30,9 +35,15 @@
   color: var(--white-purple-color);
 }
 
-.noti-card .border-box .noti-text .challenger {
+.noti-card .border-box .noti-text .challenger,
+.noti-card .border-box .noti-text .accepter,
+.noti-card .border-box .noti-text .inviter {
   font-weight: 500;
   color: var(--light-purple-color);
+}
+
+.noti-card .border-box .noti-text .squad-name {
+  color: var(--purple-color);
 }
 
 .noti-card .border-box .header {
