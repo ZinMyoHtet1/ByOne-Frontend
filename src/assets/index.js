@@ -11,6 +11,7 @@ import squadIcon from "./squad-icon.svg";
 import settingIcon from "./setting-icon.svg";
 import logoutIcon from "./logout-icon.svg";
 import upArrowIcon from "./upArrow-icon.svg";
+import knifeIcon from "./knife-icon.svg";
 
 export {
   appLogoIcon,
@@ -26,6 +27,7 @@ export {
   settingIcon,
   logoutIcon,
   upArrowIcon,
+  knifeIcon,
 };
 
 export * from "./badges";

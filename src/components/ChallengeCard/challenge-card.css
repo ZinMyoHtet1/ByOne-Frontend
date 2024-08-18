@@ -5,7 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 6px 12px;
+  padding: 6px 12px 16px;
   background: rgb(2, 48, 71);
   background: linear-gradient(
     155deg,
@@ -115,13 +115,44 @@
   /* transition: transform 0.4s ease-out; */
 }
 
-.challenge-card:hover {
-  /* transform: rotate(405deg); */
+/* .challenge-card:hover {
   border: 1px solid var(--purple-color);
-}
+} */
 
 .challenge-card .challenge-card-container .bet-card .bet-amount {
   transform: rotate(-45deg);
   color: var(--green-color);
   font-size: 14px;
+}
+
+/* footer */
+
+.challenge-card .challenge-card-footer {
+  position: absolute;
+  bottom: 5px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.challenge-card .challenge-card-footer .box {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--white-purple-color);
+  background-color: var(--dark-color);
+}
+
+.challenge-card .challenge-card-footer .winrate {
+  font-size: 9px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--light-purple-color);
+}
+
+.challenge-card .challenge-card-footer .winrate span {
+  font-style: italic;
+  color: var(--green-color);
 }

@@ -31,6 +31,13 @@ const ChallengeCard = () => {
         </div>
       </div>
       <FightButton />
+      <div className="challenge-card-footer">
+        <span className="box"></span>
+        <span className="box"></span>
+        <div className="winrate">
+          winrate : <span>77%</span>
+        </div>
+      </div>
     </div>
   );
 };
