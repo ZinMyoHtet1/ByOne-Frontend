@@ -1,9 +1,10 @@
 .challenge-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   width: 100%;
-  height: 144px;
   padding: 6px 12px;
   background: rgb(2, 48, 71);
   background: linear-gradient(
@@ -14,10 +15,113 @@
   );
 
   box-shadow: 2px 2px 8px rgba(206, 212, 218, 0.25);
+  border-radius: 10px;
 }
 
 .challenge-card .challenge-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.challenge-card .challenge-header .challenger-profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.challenge-card .challenge-header .challenger-profile .profile-avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--cyan-color);
+  object-fit: cover;
+}
+
+.challenge-card
+  .challenge-header
+  .challenger-profile
+  .profile-details
+  .profile-name {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.challenge-card
+  .challenge-header
+  .challenger-profile
+  .profile-details
+  .squad-name {
+  font-size: 10px;
+  color: var(--white-purple-color);
+  font-weight: 200;
+}
+
+.challenge-card .challenge-header .date {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  color: var(--gray-color);
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.challenge-card .challenge-header .mlbb-logo-img {
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.challenge-card .challenge-card-container {
+  display: flex;
+  padding: 10px 40px 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.challenge-card .challenge-card-container .high-rank {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 2px;
+}
+
+.challenge-card .challenge-card-container .high-rank .text {
+  font-size: 10px;
+  color: var(--orange-color);
+}
+/* .challenge-card .challenge-card-container .high-rank img {
+  height: 40px;
+  width: 40px;
+} */
+
+.challenge-card .challenge-card-container .bet-card {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--dark-purple-color);
+  transform: rotate(45deg);
+  /* transition: transform 0.4s ease-out; */
+}
+
+.challenge-card:hover {
+  /* transform: rotate(405deg); */
+  border: 1px solid var(--purple-color);
+}
+
+.challenge-card .challenge-card-container .bet-card .bet-amount {
+  transform: rotate(-45deg);
+  color: var(--green-color);
+  font-size: 14px;
 }

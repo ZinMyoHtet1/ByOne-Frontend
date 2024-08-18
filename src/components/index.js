@@ -5,6 +5,7 @@ import HistoryResultCard from "./HistoryResultCard/HistoryResultCard.jsx";
 import DrawerItem from "./DrawerItem/DrawerItem.jsx";
 import FilterChallenge from "./FilterChallenge/FilterChallenge.jsx";
 import ChallengeCard from "./ChallengeCard/ChallengeCard.jsx";
+import FightButton from "./FightButton/FightButton.jsx";
 
 import NotiController from "./NotiController.jsx";
 import BotNavigatorController from "./BotNavigatorController.jsx";
@@ -19,4 +20,5 @@ export {
   NotiController,
   FilterChallenge,
   ChallengeCard,
+  FightButton,
 };

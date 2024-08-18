@@ -11,17 +11,20 @@
 
 :root {
   --gray-color: #ced4da;
+  --dark-color: #1b263b;
   --dark-gray-color: #415a77;
   --orange-color: #f7b267;
   --skyblue-color: #0575ad;
   --white-purple-color: #bfaada;
   --purple-color: #9747ff;
   --light-purple-color: #7678ed;
+  --dark-purple-color: #3d348b;
   --gray-purple-color: #474973;
   --green-color: #2dd112;
   --red-color: #ff3030;
   --gray-blue-color: #a0bbc9;
   --dark-cyan-color: #023047;
+  --cyan-color: #0575ad;
   --gray-blue-color: #a0bbc9;
   --dark-blue-color: #1b263b;
   --light-gray-color: #d9d9d9;
