@@ -31,9 +31,6 @@
 }
 
 .filter .options select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   outline: none;
   background-color: transparent;
   font-size: 9px;

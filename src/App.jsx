@@ -1,6 +1,7 @@
 import "./App.css";
 import {
   createBrowserRouter,
+  Navigate,
   // Navigate,
   RouterProvider,
 } from "react-router-dom";
@@ -41,7 +42,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/ranking",
-        element: <Ranking />,
+        element: <Navigate to="/ranking/squad" />,
+      },
+      {
+        path: "/ranking/squad",
+        element: <Ranking category="squad" />,
+      },
+      {
+        path: "/ranking/player",
+        element: <Ranking category="player" />,
       },
       {
         path: "/profile",

@@ -12,6 +12,7 @@ import settingIcon from "./setting-icon.svg";
 import logoutIcon from "./logout-icon.svg";
 import upArrowIcon from "./upArrow-icon.svg";
 import knifeIcon from "./knife-icon.svg";
+import dateFilterArrow from "./date-filter-arrow.svg";
 
 export {
   appLogoIcon,
@@ -28,6 +29,7 @@ export {
   logoutIcon,
   upArrowIcon,
   knifeIcon,
+  dateFilterArrow,
 };
 
 export * from "./badges";

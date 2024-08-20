@@ -1,9 +1,23 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { upArrowIcon } from "../../assets";
 import "./filter-challenge.css";
 const FilterChallenge = ({ label, options, name, value, handleChange }) => {
   const [touched, setTouched] = useState(false);
+
+  useEffect(() => {
+    const handleCloseSelect = (e) => {
+      if (!e.target.closest("select")) {
+        setTouched(false);
+      }
+    };
+    document.addEventListener("click", handleCloseSelect);
+
+    return () => {
+      document.removeEventListener("click", handleCloseSelect);
+    };
+  }, []);
+
   return (
     <div className="filter">
       <div className="label">{label}</div>

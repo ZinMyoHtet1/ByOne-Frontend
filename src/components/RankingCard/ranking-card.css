@@ -1,0 +1,56 @@
+.ranking-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* gap: 4px; */
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 0;
+  background-color: var(--dark-color);
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.ranking-card .ranking-no {
+  width: 20px;
+  text-align: end;
+  color: #fff;
+}
+
+.ranking-card .player-profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  gap: 4px;
+  padding: 10px;
+}
+
+.ranking-card .player-profile img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 0.1px solid #f7b267;
+}
+
+.ranking-card .player-profile .profile-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--purple-color);
+}
+
+.ranking-card .data-item {
+  width: 50px;
+  text-align: center;
+  color: var(--green-color);
+  display: inline-block;
+}
+
+.ranking-card .data-item:last-child {
+  color: #fff;
+}
+
+.ranking-card .data-item.battle {
+  color: var(--orange-color);
+}

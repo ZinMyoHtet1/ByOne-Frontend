@@ -28,14 +28,26 @@
   --gray-blue-color: #a0bbc9;
   --dark-blue-color: #1b263b;
   --light-gray-color: #d9d9d9;
+  --black-color: #0d1b2a;
 }
 
 div,
 span,
 a,
 ul,
+select,
 li {
   -webkit-tap-highlight-color: transparent;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .tab-page {
