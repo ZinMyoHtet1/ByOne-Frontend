@@ -1,7 +1,7 @@
 import "./App.css";
 import {
   createBrowserRouter,
-  Navigate,
+  // Navigate,
   RouterProvider,
 } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout/RootLayout";
@@ -12,7 +12,25 @@ const router = createBrowserRouter([
     path: "/",
     element: <RootLayout />,
     children: [
-      { index: true, element: <Navigate to="/activity" /> },
+      {
+        index: true,
+        element: (
+          <div
+            className="full-page"
+            style={{
+              backgroundColor: "blue",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "24px",
+              fontWeight: 500,
+              color: "#fff",
+            }}
+          >
+            Welcome
+          </div>
+        ),
+      },
       {
         path: "/activity",
         element: <Activity />,
