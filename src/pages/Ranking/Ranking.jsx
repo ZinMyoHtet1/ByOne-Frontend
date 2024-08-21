@@ -5,7 +5,11 @@ import { Button, RankingCard } from "../../components";
 import { RankingCategory, RankingContainer } from "../../containers";
 import "./ranking.css";
 
+import { rankingList } from "../../db/lists";
+
 const Ranking = ({ category }) => {
+  const [sliceIndex, setSliceIndex] = useState(8);
+
   const [loading, setLoading] = useState(false);
   const options = [
     { label: "Weekly", value: "week" },
@@ -15,7 +19,10 @@ const Ranking = ({ category }) => {
 
   const handleLoadMore = () => {
     setLoading(true);
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => {
+      setSliceIndex((prevValue) => prevValue * 2);
+      setLoading(false);
+    }, 3000);
   };
 
   return (
@@ -35,14 +42,22 @@ const Ranking = ({ category }) => {
         </div>
       </div>
       <RankingContainer>
-        <RankingCard name="Harubusa" battle="100" win="80" score="50" />
-        <RankingCard name="Harubusa" battle="130" win="111" score="50" />
+        {rankingList.slice(0, sliceIndex).map((ranking, i) => (
+          <RankingCard
+            no={i + 1}
+            name={ranking.name}
+            battle={ranking.battle}
+            win={ranking.win}
+            key={ranking.name + i}
+          />
+        ))}
+        {/* <RankingCard name="Harubusa" battle="130" win="111" score="50" />
         <RankingCard name="Harubusa" battle="172" win="98" score="50" />
         <RankingCard name="Harubusa" battle="55" win="40" score="50" />
         <RankingCard name="Harubusa" battle="100" win="80" score="50" />
         <RankingCard name="Harubusa" battle="130" win="111" score="50" />
         <RankingCard name="Harubusa" battle="172" win="98" score="50" />
-        <RankingCard name="Harubusa" battle="55" win="40" score="50" />
+        <RankingCard name="Harubusa" battle="55" win="40" score="50" /> */}
         {/*<RankingCard name="Harubusa" battle="100" win="80" score="50" />
         <RankingCard name="Harubusa" battle="130" win="111" score="50" />
         <RankingCard name="Harubusa" battle="172" win="98" score="50" />
@@ -53,8 +68,10 @@ const Ranking = ({ category }) => {
         <RankingCard name="Harubusa" battle="55" win="40" score="50" /> */}
         {loading ? (
           <div className="loading">loading...</div>
-        ) : (
+        ) : sliceIndex < rankingList.length ? (
           <Button label="See More" handleClick={handleLoadMore} />
+        ) : (
+          "end result"
         )}
       </RankingContainer>
 
