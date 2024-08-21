@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import "./ranking-card.css";
 
-const RankingCard = ({ name, battle, win, score }) => {
+const RankingCard = ({ name, battle, win, score, border = false }) => {
   return (
-    <div className="ranking-card">
+    <div className={`ranking-card ${border ? "border" : ""}`}>
       <span className="ranking-no">1</span>
       <span className="player-profile">
         <img

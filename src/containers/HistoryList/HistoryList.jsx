@@ -1,7 +1,14 @@
-import { HistoryResultCard } from "../../components";
+import { useState } from "react";
+import { Button, HistoryResultCard } from "../../components";
 import "./historyList.css";
 
 const HistoryList = () => {
+  const [loading, setLoading] = useState(false);
+
+  const handleLoadMore = () => {
+    setLoading(true);
+    setTimeout(() => setLoading(false), 3000);
+  };
   return (
     <div id="history-list">
       <div className="label">History</div>
@@ -30,6 +37,11 @@ const HistoryList = () => {
           date="2 days ago"
           contestants={["Your Squad", "Moo Squad"]}
         />
+        {loading ? (
+          <div className="loading">loading</div>
+        ) : (
+          <Button label="see more" handleClick={handleLoadMore} />
+        )}
       </div>
     </div>
   );

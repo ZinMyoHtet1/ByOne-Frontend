@@ -1,3 +1,6 @@
+/* .ranking-container {
+  padding-bottom: 40px;
+} */
 .ranking-container .ranking-header {
   display: flex;
   align-items: center;
@@ -31,4 +34,10 @@
   flex-direction: column;
   gap: 4px;
   padding: 4px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranking-container .ranking-card-container .button {
+  margin-top: 10px;
 }

@@ -1,16 +1,20 @@
 .ranking-card {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   /* gap: 4px; */
   font-size: 12px;
   font-family: "Roboto", sans-serif;
-  padding: 12px 0;
+  height: 50px;
   background-color: var(--dark-color);
   border-radius: 4px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.ranking-card.border {
+  border: 0.5px solid var(--green-color);
+}
 .ranking-card .ranking-no {
   width: 20px;
   text-align: end;

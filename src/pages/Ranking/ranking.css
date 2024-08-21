@@ -24,3 +24,21 @@
   width: 10px;
   height: 5px;
 }
+
+/* your ranking */
+
+#ranking-page .your-ranking {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0;
+}
+
+#ranking-page .your-ranking .label {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  color: var(--purple-color);
+  font-weight: 500;
+}

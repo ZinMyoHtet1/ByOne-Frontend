@@ -9,5 +9,13 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding-bottom: 6px;
+  padding-bottom: 36px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#history-list .result-card-container .button,
+#history-list .result-card-container .loading {
+  margin-top: 6px;
+  margin-right: 6px;
 }

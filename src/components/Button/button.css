@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 5px;
+  background: rgb(118, 120, 237);
+  background: linear-gradient(
+    180deg,
+    rgba(118, 120, 237, 1) 7%,
+    rgba(61, 52, 139, 1) 55%
+  );
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
