@@ -13,6 +13,10 @@ import logoutIcon from "./logout-icon.svg";
 import upArrowIcon from "./upArrow-icon.svg";
 import knifeIcon from "./knife-icon.svg";
 import dateFilterArrow from "./date-filter-arrow.svg";
+import profileCoverImg from "./profile-cover-img.png";
+import unlockIcon from "./unlock-icon.svg";
+import lockIcon from "./lock-icon.svg";
+import addPlusIcon from "./add-plus-icon.svg";
 
 export {
   appLogoIcon,
@@ -30,6 +34,10 @@ export {
   upArrowIcon,
   knifeIcon,
   dateFilterArrow,
+  profileCoverImg,
+  unlockIcon,
+  lockIcon,
+  addPlusIcon,
 };
 
 export * from "./badges";

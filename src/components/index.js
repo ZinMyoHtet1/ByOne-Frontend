@@ -9,6 +9,7 @@ import FightButton from "./FightButton/FightButton.jsx";
 import RankingCategoryButton from "./RankingCategoryButton/RankingCategoryButton.jsx";
 import RankingCard from "./RankingCard/RankingCard.jsx";
 import Button from "./Button/Button.jsx";
+import SquadCard from "./SquadCard/SquadCard.jsx";
 
 import NotiController from "./NotiController.jsx";
 import BotNavigatorController from "./BotNavigatorController.jsx";
@@ -27,4 +28,5 @@ export {
   RankingCategoryButton,
   RankingCard,
   Button,
+  SquadCard,
 };
