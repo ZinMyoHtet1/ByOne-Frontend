@@ -4,7 +4,7 @@ import {
   mythicBadge,
   profileCoverImg,
 } from "../../assets";
-import { SquadCard } from "../../components";
+import { CircleAnalysis, SquadCard } from "../../components";
 import "./profile-details.css";
 
 const ProfileDetails = () => {
@@ -53,7 +53,20 @@ const ProfileDetails = () => {
               </div>
             </div>
           </div>
-          <div className="analysis-container">anaysis</div>
+          <div className="three-circles">
+            <CircleAnalysis
+              amount="84.8%"
+              label="win rate"
+              color="var(--orange-color)"
+              size="large"
+            />
+            <CircleAnalysis amount="145" label="total" />
+            <CircleAnalysis
+              amount="123"
+              label="win"
+              color="var(--green-color)"
+            />
+          </div>
         </div>
       </div>
     </div>

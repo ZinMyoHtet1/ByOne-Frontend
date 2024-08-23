@@ -15,22 +15,23 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: (
-          <div
-            className="full-page"
-            style={{
-              backgroundColor: "blue",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "24px",
-              fontWeight: 500,
-              color: "#fff",
-            }}
-          >
-            Welcome
-          </div>
-        ),
+        // element: (
+        //   <div
+        //     className="full-page"
+        //     style={{
+        //       backgroundColor: "blue",
+        //       display: "flex",
+        //       alignItems: "center",
+        //       justifyContent: "center",
+        //       fontSize: "24px",
+        //       fontWeight: 500,
+        //       color: "#fff",
+        //     }}
+        //   >
+        //     Welcome
+        //   </div>
+        // )
+        element: <Navigate to="/activity" />,
       },
       {
         path: "/activity",

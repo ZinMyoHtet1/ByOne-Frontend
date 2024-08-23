@@ -7,6 +7,7 @@ import NotiNavbar from "./NotiNavbar/NotiNavbar";
 import RankingCategory from "./RankingCategory/RankingCategory";
 import RankingContainer from "./RankingContainer/RankingContainer";
 import ProfileDetails from "./ProfileDetails/ProfileDetails";
+import ProfilePosts from "./ProfilePosts/ProfilePosts";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   RankingCategory,
   RankingContainer,
   ProfileDetails,
+  ProfilePosts,
 };

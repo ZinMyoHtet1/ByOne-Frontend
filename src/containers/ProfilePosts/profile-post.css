@@ -1,0 +1,49 @@
+.profile-post-container {
+  padding: 14px 0;
+}
+
+.profile-post-container .profile-post-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 0.013px solid rgba(0, 0, 0, 0.25);
+}
+
+.profile-post-container .profile-post-navbar .text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: var(--light-gray-color);
+}
+
+.profile-post-container .profile-post-navbar .categorys {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-post-container .profile-post-navbar .categorys .post-category {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-post-container
+  .profile-post-navbar
+  .categorys
+  .post-category:not(.selected):hover {
+  opacity: 0.8;
+}
+
+.profile-post-container
+  .profile-post-navbar
+  .categorys
+  .post-category.selected {
+  background-color: var(--light-purple-color);
+}

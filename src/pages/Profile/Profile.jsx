@@ -1,10 +1,12 @@
-import { ProfileDetails } from "../../containers";
+import { ProfileDetails, ProfilePosts } from "../../containers";
 import "./profile.css";
 
 const Profile = () => {
   return (
-    <div className="tab-page">
+    <div id="profile-page" className="tab-page">
       <ProfileDetails />
+      <div className="create-btn">Create New Challenge</div>
+      <ProfilePosts />
     </div>
   );
 };
