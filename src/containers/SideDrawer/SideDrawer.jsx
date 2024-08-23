@@ -4,8 +4,10 @@ import { useEffect } from "react";
 import { backBtnIcon, logoutIcon, settingIcon, squadIcon } from "../../assets";
 import "./side-drawer.css";
 import { DrawerItem } from "../../components";
+import { useNavigate } from "react-router";
 
 const SideDrawer = ({ openDrawer, setOpenDrawer }) => {
+  const navigate = useNavigate();
   useEffect(() => {
     const handleCloseDrawer = (e) => {
       if (openDrawer && !e.target.closest(".drawer-wrapper,#side-drawer-btn")) {
@@ -18,6 +20,11 @@ const SideDrawer = ({ openDrawer, setOpenDrawer }) => {
       document.removeEventListener("click", handleCloseDrawer);
     };
   }, [openDrawer, setOpenDrawer]);
+
+  const handleGoProfile = () => {
+    navigate("/profile");
+    setOpenDrawer(false);
+  };
 
   return (
     <div id="side-drawer">
@@ -33,6 +40,7 @@ const SideDrawer = ({ openDrawer, setOpenDrawer }) => {
             src="https://images.unsplash.com/photo-1511213966740-24d719a0a814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D"
             alt="profile-img"
             className="profile-img"
+            onClick={handleGoProfile}
           />
         </div>
         <div className="drawer-item-container">

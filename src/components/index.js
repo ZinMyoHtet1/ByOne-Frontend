@@ -10,6 +10,7 @@ import RankingCategoryButton from "./RankingCategoryButton/RankingCategoryButton
 import RankingCard from "./RankingCard/RankingCard.jsx";
 import Button from "./Button/Button.jsx";
 import SquadCard from "./SquadCard/SquadCard.jsx";
+import PrivateChallengeCard from "./PrivateChallengeCard/PrivateChallengeCard.jsx";
 
 import NotiController from "./NotiController.jsx";
 import BotNavigatorController from "./BotNavigatorController.jsx";
@@ -29,4 +30,5 @@ export {
   RankingCard,
   Button,
   SquadCard,
+  PrivateChallengeCard,
 };

@@ -17,6 +17,7 @@ import profileCoverImg from "./profile-cover-img.png";
 import unlockIcon from "./unlock-icon.svg";
 import lockIcon from "./lock-icon.svg";
 import addPlusIcon from "./add-plus-icon.svg";
+import challengeArrowIcon from "./challengeArrow.svg";
 
 export {
   appLogoIcon,
@@ -38,6 +39,7 @@ export {
   unlockIcon,
   lockIcon,
   addPlusIcon,
+  challengeArrowIcon,
 };
 
 export * from "./badges";
