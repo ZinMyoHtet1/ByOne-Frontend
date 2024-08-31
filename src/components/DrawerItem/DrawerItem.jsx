@@ -2,9 +2,9 @@
 
 import "./drawer-item.css";
 
-const DrawerItem = ({ icon, label }) => {
+const DrawerItem = ({ icon, label, handleClick }) => {
   return (
-    <div className="drawer-item">
+    <div className="drawer-item" onClick={handleClick}>
       <div className="drawer-item-icon">
         <img src={icon} alt="drawer-item-icon" />
       </div>

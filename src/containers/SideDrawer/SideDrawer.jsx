@@ -6,7 +6,12 @@ import "./side-drawer.css";
 import { DrawerItem } from "../../components";
 import { useNavigate } from "react-router";
 
-const SideDrawer = ({ openDrawer, setOpenDrawer }) => {
+const SideDrawer = ({
+  openDrawer,
+  setOpenDrawer,
+  setShowToast,
+  setToastLabel,
+}) => {
   const navigate = useNavigate();
   useEffect(() => {
     const handleCloseDrawer = (e) => {
@@ -26,6 +31,16 @@ const SideDrawer = ({ openDrawer, setOpenDrawer }) => {
     setOpenDrawer(false);
   };
 
+  const handleNavigate = (to) => {
+    navigate(to);
+    setOpenDrawer(false);
+  };
+
+  const handleToast = (label) => {
+    setToastLabel(label);
+    setShowToast(true);
+    setOpenDrawer(false);
+  };
   return (
     <div id="side-drawer">
       <div className={`drawer-wrapper ${openDrawer ? "open" : ""}`}>
@@ -44,9 +59,21 @@ const SideDrawer = ({ openDrawer, setOpenDrawer }) => {
           />
         </div>
         <div className="drawer-item-container">
-          <DrawerItem icon={squadIcon} label="squads" />
-          <DrawerItem icon={settingIcon} label="setting" />
-          <DrawerItem icon={logoutIcon} label="logout" />
+          <DrawerItem
+            icon={squadIcon}
+            label="squads"
+            handleClick={() => handleNavigate("/squads")}
+          />
+          <DrawerItem
+            icon={settingIcon}
+            label="setting"
+            handleClick={() => handleToast("setting")}
+          />
+          <DrawerItem
+            icon={logoutIcon}
+            label="logout"
+            handleClick={() => handleToast("logout")}
+          />
         </div>
         <div className="copyright">
           2024 <span className="copyright-entity">&#169;</span> Copyright by

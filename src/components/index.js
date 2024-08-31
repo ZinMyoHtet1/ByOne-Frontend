@@ -11,6 +11,7 @@ import RankingCard from "./RankingCard/RankingCard.jsx";
 import Button from "./Button/Button.jsx";
 import SquadCard from "./SquadCard/SquadCard.jsx";
 import PrivateChallengeCard from "./PrivateChallengeCard/PrivateChallengeCard.jsx";
+import Toast from "./Toast/Toast.jsx";
 
 import NotiController from "./NotiController.jsx";
 import BotNavigatorController from "./BotNavigatorController.jsx";
@@ -31,4 +32,5 @@ export {
   Button,
   SquadCard,
   PrivateChallengeCard,
+  Toast,
 };

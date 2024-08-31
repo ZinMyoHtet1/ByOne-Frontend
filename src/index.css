@@ -66,6 +66,24 @@ select {
   width: 100%;
   min-height: 100vh;
   z-index: 400;
+  background: rgb(61, 52, 139);
+  background: linear-gradient(
+    172deg,
+    rgba(61, 52, 139, 1) 16%,
+    rgba(2, 48, 71, 1) 62%
+  );
+}
+
+.full-page .navbar {
+  position: fixed;
+  top: 0;
+  width: 393px;
+  padding: 0 20px;
+  height: 56px;
+  /* width: 100%; */
+  background-color: #3d348b;
+  border-bottom: 1px solid rgba(27, 38, 59, 0.25);
+  z-index: 200;
 }
 
 .btn {

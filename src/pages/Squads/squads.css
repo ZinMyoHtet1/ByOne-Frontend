@@ -1,0 +1,11 @@
+#squad-page .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  height: 50px;
+}
+
+#squad-page .container {
+  padding: 60px 10px;
+}

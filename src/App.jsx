@@ -6,7 +6,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout/RootLayout";
-import { Activity, Challenge, Notification, Profile, Ranking } from "./pages";
+import {
+  Activity,
+  Challenge,
+  Notification,
+  Profile,
+  Ranking,
+  Squads,
+} from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +67,10 @@ const router = createBrowserRouter([
       {
         path: "/notifications",
         element: <Notification />,
+      },
+      {
+        path: "/squads",
+        element: <Squads />,
       },
     ],
   },

@@ -51,6 +51,6 @@
 .profile-post-container .post-container {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   padding: 6px 0 8px;
 }
