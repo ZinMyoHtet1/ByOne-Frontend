@@ -3,31 +3,29 @@ import "./root.css";
 import { Outlet } from "react-router";
 
 import { BottomNavigation, Navbar, SideDrawer } from "../../containers";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Toast } from "../../components";
+
+import { useSelector, useDispatch } from "react-redux";
+import { hideToast } from "../../actions/uiActions";
+
 const RootLayout = () => {
-  const [openDrawer, setOpenDrawer] = useState(false);
-  const [showToast, setShowToast] = useState(false);
-  const [toastLabel, setToastLabel] = useState("");
+  const { showToast, toastLabel, showDrawer } = useSelector(
+    (state) => state.ui
+  );
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    if (showToast) setTimeout(() => setShowToast(false), 2000);
-  }, [showToast]);
+    if (showToast) setTimeout(() => dispatch(hideToast()), 2000);
+  }, [dispatch, showToast]);
 
   return (
     <div id="root-layout">
       <div className="wrapper">
-        <Navbar setOpenDrawer={setOpenDrawer} />
+        <Navbar />
         <BottomNavigation />
         <Outlet />
-        {openDrawer ? (
-          <SideDrawer
-            openDrawer={openDrawer}
-            setOpenDrawer={setOpenDrawer}
-            setShowToast={setShowToast}
-            setToastLabel={setToastLabel}
-          />
-        ) : null}
+        {showDrawer ? <SideDrawer /> : null}
       </div>
       <Toast label={toastLabel} show={showToast} />
     </div>

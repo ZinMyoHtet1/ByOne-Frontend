@@ -12,6 +12,7 @@ import Button from "./Button/Button.jsx";
 import SquadCard from "./SquadCard/SquadCard.jsx";
 import PrivateChallengeCard from "./PrivateChallengeCard/PrivateChallengeCard.jsx";
 import Toast from "./Toast/Toast.jsx";
+import SearchBar from "./SearchBar/SearchBar.jsx";
 
 import NotiController from "./NotiController.jsx";
 import BotNavigatorController from "./BotNavigatorController.jsx";
@@ -33,4 +34,5 @@ export {
   SquadCard,
   PrivateChallengeCard,
   Toast,
+  SearchBar,
 };

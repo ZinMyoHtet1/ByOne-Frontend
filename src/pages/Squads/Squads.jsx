@@ -1,4 +1,5 @@
-import { backBtnIcon, formkitBtn } from "../../assets";
+import { backBtnIcon } from "../../assets";
+import { SearchBar } from "../../components";
 import "./squads.css";
 
 const Squads = () => {
@@ -11,9 +12,13 @@ const Squads = () => {
           className="back-btn btn"
           onClick={() => history.go(-1)}
         />
-        <img src={formkitBtn} alt="" className="formkit-btn btn" />
+        <div className="label">Squads</div>
+        {/* <img src={formkitBtn} alt="" className="formkit-btn btn" /> */}
       </div>
-      <div className="container">Hello</div>
+      <div className="searchbar-container">
+        <SearchBar placeholder="Search by id" />
+        <SearchBar placeholder="Search by name" />
+      </div>
     </div>
   );
 };

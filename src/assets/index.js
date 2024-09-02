@@ -19,6 +19,7 @@ import lockIcon from "./lock-icon.svg";
 import addPlusIcon from "./add-plus-icon.svg";
 import challengeArrowIcon from "./challengeArrow.svg";
 import formkitBtn from "./formkit-btn-icon.svg";
+import searchIcon from "./search-icon.svg";
 
 export {
   appLogoIcon,
@@ -42,6 +43,7 @@ export {
   addPlusIcon,
   challengeArrowIcon,
   formkitBtn,
+  searchIcon,
 };
 
 export * from "./badges";

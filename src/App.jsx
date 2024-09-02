@@ -14,6 +14,9 @@ import {
   Ranking,
   Squads,
 } from "./pages";
+import store from "./reducers";
+
+import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
   {
@@ -77,7 +80,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Provider store={store}>
+      <RouterProvider router={router} />;
+    </Provider>
+  );
 }
 
 export default App;

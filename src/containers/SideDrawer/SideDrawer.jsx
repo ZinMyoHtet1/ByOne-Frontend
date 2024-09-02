@@ -1,22 +1,23 @@
-/* eslint-disable react/prop-types */
 import { useEffect } from "react";
 
 import { backBtnIcon, logoutIcon, settingIcon, squadIcon } from "../../assets";
 import "./side-drawer.css";
 import { DrawerItem } from "../../components";
 import { useNavigate } from "react-router";
+import { showToast } from "../../actions/uiActions";
 
-const SideDrawer = ({
-  openDrawer,
-  setOpenDrawer,
-  setShowToast,
-  setToastLabel,
-}) => {
+import { useDispatch, useSelector } from "react-redux";
+import { HIDE_DRAWER } from "../../constants";
+
+const SideDrawer = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { showDrawer } = useSelector((state) => state.ui);
+
   useEffect(() => {
     const handleCloseDrawer = (e) => {
-      if (openDrawer && !e.target.closest(".drawer-wrapper,#side-drawer-btn")) {
-        setOpenDrawer(false);
+      if (showDrawer && !e.target.closest(".drawer-wrapper,#side-drawer-btn")) {
+        dispatch({ type: HIDE_DRAWER });
       }
     };
     document.addEventListener("click", handleCloseDrawer);
@@ -24,32 +25,31 @@ const SideDrawer = ({
     return () => {
       document.removeEventListener("click", handleCloseDrawer);
     };
-  }, [openDrawer, setOpenDrawer]);
+  }, [showDrawer, dispatch]);
 
   const handleGoProfile = () => {
     navigate("/profile");
-    setOpenDrawer(false);
+    dispatch({ type: HIDE_DRAWER });
   };
 
   const handleNavigate = (to) => {
     navigate(to);
-    setOpenDrawer(false);
+    dispatch({ type: HIDE_DRAWER });
   };
 
   const handleToast = (label) => {
-    setToastLabel(label);
-    setShowToast(true);
-    setOpenDrawer(false);
+    dispatch(showToast(label));
+    dispatch({ type: HIDE_DRAWER });
   };
   return (
     <div id="side-drawer">
-      <div className={`drawer-wrapper ${openDrawer ? "open" : ""}`}>
+      <div className={`drawer-wrapper ${showDrawer ? "open" : ""}`}>
         <div className="drawer-nav">
           <img
             src={backBtnIcon}
             alt="back-icon"
             className="back-btn"
-            onClick={() => setOpenDrawer(false)}
+            onClick={() => dispatch({ type: HIDE_DRAWER })}
           />
           <img
             src="https://images.unsplash.com/photo-1511213966740-24d719a0a814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2FtZXxlbnwwfHwwfHx8MA%3D%3D"
