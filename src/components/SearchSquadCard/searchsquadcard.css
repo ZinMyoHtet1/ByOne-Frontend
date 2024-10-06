@@ -1,0 +1,60 @@
+.search-squad-card {
+  border-radius: 5px;
+  height: 120px;
+}
+
+.search-squad-card .top-container {
+  border-radius: 5px 5px 0 0;
+  background-color: var(--cyan-color);
+  padding: 6px 11px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.search-squad-card .top-container .profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-squad-card .top-container .profile .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.search-squad-card .top-container .profile .name {
+  font-size: 12px;
+  font-weight: 500px;
+  color: #fff;
+}
+
+.search-squad-card .top-container .profile .id-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.search-squad-card .top-container .profile .id-container .id {
+  font-size: 8px;
+  font-weight: 300px;
+  color: var(--gray-blue-color);
+}
+
+.search-squad-card .top-container .profile-img img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.search-squad-card .bottom-container {
+  background-color: var(--light-gray-color);
+  padding: 8px 11px;
+  border-radius: 0 0 5px 5px;
+}

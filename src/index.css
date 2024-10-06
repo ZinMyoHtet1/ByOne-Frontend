@@ -64,7 +64,7 @@ select {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 102vh;
   z-index: 400;
   background: rgb(61, 52, 139);
   background: linear-gradient(
@@ -72,6 +72,7 @@ select {
     rgba(61, 52, 139, 1) 16%,
     rgba(2, 48, 71, 1) 62%
   );
+  overflow-y: hidden;
 }
 
 .full-page .navbar {

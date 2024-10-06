@@ -20,6 +20,9 @@ import addPlusIcon from "./add-plus-icon.svg";
 import challengeArrowIcon from "./challengeArrow.svg";
 import formkitBtn from "./formkit-btn-icon.svg";
 import searchIcon from "./search-icon.svg";
+import clipboardIcon from "./clipboard-icon.svg";
+import battleAxeIcon from "./battle-axe-icon.svg";
+import memberIcon from "./members-icon.svg";
 
 export {
   appLogoIcon,
@@ -44,6 +47,9 @@ export {
   challengeArrowIcon,
   formkitBtn,
   searchIcon,
+  clipboardIcon,
+  battleAxeIcon,
+  memberIcon,
 };
 
 export * from "./badges";

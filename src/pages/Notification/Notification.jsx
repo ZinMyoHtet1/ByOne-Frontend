@@ -8,7 +8,7 @@ const Notification = () => {
       <NotiNavbar />
       <div className="noti-container">
         <NotiController control="challenge" challenger="Sensei" seen />
-        <NotiController control="accept" accepter="Gucci" />
+        {/* <NotiController control="accept" accepter="Gucci" />
         <NotiController control="challenge" challenger="Sensei" />
         <NotiController control="challenge" challenger="Sensei" seen />
         <NotiController control="victory" />
@@ -16,7 +16,7 @@ const Notification = () => {
         <NotiController control="challenge" challenger="Sensei" />
         <NotiController control="invite" inviter="Ranger" squad="SuperTeam" />
         <NotiController control="victory" seen />
-        <NotiController control="challenge" challenger="Sensei" />
+        <NotiController control="challenge" challenger="Sensei" /> */}
       </div>
     </div>
   );

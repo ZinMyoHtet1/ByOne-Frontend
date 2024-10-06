@@ -15,10 +15,17 @@
 }
 
 #squad-page .searchbar-container {
-  padding: 60px 10px 0;
+  padding: 60px 10px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+}
+
+#squad-page .content-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
 }
