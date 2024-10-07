@@ -1,6 +1,9 @@
 .search-squad-card {
+  position: relative;
   border-radius: 5px;
-  height: 120px;
+  height: 115px;
+  background-color: var(--light-gray-color);
+  box-shadow: rgba(0, 0, 0, 0.25);
 }
 
 .search-squad-card .top-container {
@@ -54,7 +57,35 @@
 }
 
 .search-squad-card .bottom-container {
-  background-color: var(--light-gray-color);
+  display: flex;
+  /* height: 100%; */
   padding: 8px 11px;
   border-radius: 0 0 5px 5px;
+  justify-content: space-between;
+}
+
+.search-squad-card .bottom-container div {
+  font-size: 10px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.search-squad-card .request-btn {
+  position: absolute;
+  bottom: -5px;
+  right: 7px;
+  display: flex;
+  width: 70px;
+  height: 20px;
+  font-size: 8px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: var(--blue-color);
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), -1px -1px 2px rgba(0, 0, 0, 0.25);
 }

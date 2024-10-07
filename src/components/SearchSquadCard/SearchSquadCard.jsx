@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./searchsquadcard.css";
 
-import { clipboardIcon } from "../../assets";
+import { battleAxeIcon, clipboardIcon, memberIcon } from "../../assets";
 import WinrateBar from "../WinrateBar/WinrateBar";
 
 const SearchSquadCard = ({ winrate }) => {
@@ -31,7 +31,19 @@ const SearchSquadCard = ({ winrate }) => {
 
         <WinrateBar winrate={winrate} />
       </div>
-      <div className="bottom-container">Bottom</div>
+      <div className="bottom-container">
+        <div className="battle-item">
+          <img src={battleAxeIcon} alt="battle-axe-icon" />
+          <span className="battle-number">133</span>
+          <span className="label">battles</span>
+        </div>
+        <div className="member-item">
+          <img src={memberIcon} alt="member-icon" />
+          <span className="member-number">6</span>
+          <span className="label">members</span>
+        </div>
+      </div>
+      <div className="request-btn btn">Request Join</div>
     </div>
   );
 };
