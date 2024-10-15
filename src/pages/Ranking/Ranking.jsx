@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { dateFilterArrow } from "../../assets";
 import { Button, RankingCard } from "../../components";
@@ -7,7 +6,7 @@ import "./ranking.css";
 
 import { rankingList } from "../../db/lists";
 
-const Ranking = ({ category }) => {
+const Ranking = () => {
   const [sliceIndex, setSliceIndex] = useState(8);
 
   const [loading, setLoading] = useState(false);
@@ -15,7 +14,6 @@ const Ranking = ({ category }) => {
     { label: "Weekly", value: "week" },
     { label: "Monthly", value: "month" },
   ];
-  console.log(category);
 
   const handleLoadMore = () => {
     setLoading(true);

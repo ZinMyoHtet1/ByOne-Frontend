@@ -4,15 +4,16 @@ import "./searchsquadcard.css";
 import { battleAxeIcon, clipboardIcon, memberIcon } from "../../assets";
 import WinrateBar from "../WinrateBar/WinrateBar";
 
-const SearchSquadCard = ({ winrate }) => {
+const SearchSquadCard = ({ data }) => {
+  const { name, id, battles, members, winrate } = data;
   return (
     <div className="search-squad-card">
       <div className="top-container">
         <div className="profile">
           <div className="left">
-            <div className="name">Squad Name</div>
+            <div className="name">{name}</div>
             <div className="id-container">
-              <div className="id">234448839233</div>
+              <div className="id">{id}</div>
               <img
                 src={clipboardIcon}
                 alt="clipboard-icon"
@@ -34,12 +35,12 @@ const SearchSquadCard = ({ winrate }) => {
       <div className="bottom-container">
         <div className="battle-item">
           <img src={battleAxeIcon} alt="battle-axe-icon" />
-          <span className="battle-number">133</span>
+          <span className="battle-number">{battles}</span>
           <span className="label">battles</span>
         </div>
         <div className="member-item">
           <img src={memberIcon} alt="member-icon" />
-          <span className="member-number">6</span>
+          <span className="member-number">{members}</span>
           <span className="label">members</span>
         </div>
       </div>

@@ -13,6 +13,31 @@
   margin-bottom: 36px;
 }
 
+@keyframes alarm-animate {
+  0% {
+    rotate: 0deg;
+  }
+
+  30% {
+    rotate: 8deg;
+  }
+
+  50% {
+    rotate: 10deg;
+  }
+
+  80% {
+    rotate: -8deg;
+  }
+
+  100% {
+    rotate: -10deg;
+  }
+}
+
+#active-battle-card .timer-container .alarm-icon.warning {
+  animation: 0.4s infinite alternate alarm-animate;
+}
 #active-battle-card .timer-container .timer {
   align-self: flex-end;
   font-size: 24px;

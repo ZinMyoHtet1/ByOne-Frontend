@@ -1,12 +1,34 @@
+// import { useEffect, useState } from "react";
 import { alarmIcon } from "../../assets";
+import { useCountdown } from "../../hooks";
 import "./active-battle-card.css";
 
 const ActiveBattleCard = () => {
+  const countdownTime = 20 * 1000;
+  // const countdownTime = 30 * 60 * 1000;
+
+  // // const countdown = countdownTime - nowTime;
+  // const [timer, setTimer] = useState(countdownTime);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setTimer((prev) => prev - 1000);
+  //   }, 1000);
+  // }, [timer]);
+
+  const { hours, minutes, seconds, warning } = useCountdown(countdownTime);
   return (
     <div id="active-battle-card">
       <div className="timer-container">
-        <img src={alarmIcon} alt="alarm-icon" />
-        <span className="timer">00:25:34</span>
+        <img
+          className={`alarm-icon ${warning ? "warning" : ""}`}
+          src={alarmIcon}
+          alt="alarm-icon"
+        />
+        <span className="timer">
+          {hours}:{minutes < 10 ? "0" + `${minutes}` : minutes}:
+          {seconds < 10 ? "0" + `${seconds}` : seconds}
+        </span>
         <span className="text">left to fight</span>
       </div>
       <div className="squad-container">
